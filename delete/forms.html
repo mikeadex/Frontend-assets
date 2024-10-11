@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+    The HTTP (Hypertext Transfer Protocol) is the spine of the web. It allows for sending and recieving data. The communication include request and 
+    
+    In HTTP there are two different roles: the client and the server. The client is the one that makes the request and the server is the one that responds to the request. The client is usually a web browser and the server is usually a web server.
+
+    The GET method is used to request data from a server. The data is sent in the URL.  GET method is read-only and does not affect data in anyway.  
+    
+    The POST method is used to send data to a server. The data is sent in the body of the request. The POST method tells server to accept and store data. It is often used for submitting a file or uploading a form.
+    -->
+    <form action="https://formdump.codeinstitute.net" method="POST">
+      <input type="text" name="postform" />
+    </form>
+    <form
+      action="https://formdump.codeinstitute.net"
+      method="GET"
+      target="_blank"
+    >
+      <input type="text" name="getform" />
+      <div>
+        <input
+          type="color"
+          id="color"
+          name="color"
+          placeholder="What is your favourite color"
+        />
+      </div>
+      <div>
+        <input type="file" name="file" multiple />
+      </div>
+      <div>
+        <input
+          type="number"
+          name="number"
+          placeholder="Age"
+          step="2"
+          min="18"
+          max="99"
+        />
+      </div>
+      <div>
+        <input type="range" name="volume" min="0" max="10" />
+      </div>
+      <div>
+        <input type="search" name="search" />
+      </div>
+      <br />
+      <label for="textarea"></label>
+      <textarea
+        name="textarea"
+        id="textarea"
+        placeholder="This is a textarea"
+        rows="10"
+        cols="40"
+      >
+      </textarea>
+
+      <div>
+        <h2>Dropdown</h2>
+        <label for="tech-schools"> Tech Schools in London: </label>
+        <select id="tech-schools" name="tech-schools">
+          <option value="42-london">42 London</option>
+          <option value="waes-london">WAES London</option>
+          <option value="code-institute" selected>Code Institute</option>
+        </select>
+      </div>
+      <div>
+        <h3>DataList</h3>
+        <label for="schools"></label>
+        <input list="my-schools" id="schools" name="schools" />
+        <datalist id="my-schools">
+          <option value="42-london"></option>
+          <option value="waes-london"></option>
+          <option value="code-institute" selected></option>
+        </datalist>
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Cancel" />
+        <button type="reset">Click me</button>
+      </div>
+    </form>
+  </body>
+</html>

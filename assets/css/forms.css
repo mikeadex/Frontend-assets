@@ -1,0 +1,62 @@
+/* Testing the root path */
+:root {
+    --mintWhite: #F8F9FA;
+    --pd-top: 0 12px 0 0;
+
+}
+.form-group {
+    padding: 7px 15px;
+    margin: 10px 0;
+    }
+
+.form-group label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px rgba(20, 23, 25, 0.25);
+    height: 30px;
+    background-color: var(--mintWhite);
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px rgba(20, 23, 25, 0.25);
+    min-height: 130px;
+    background-color: var(--mintWhite);
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    border: #212529 solid 1px;
+    margin: 0;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    color: #212529;
+}

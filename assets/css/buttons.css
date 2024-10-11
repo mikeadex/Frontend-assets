@@ -1,3 +1,8 @@
+button:hover {
+    background-color: #F8F9FA;
+    color: #212529;
+}
+
 .btn {
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
 }
@@ -7,7 +12,7 @@
     padding: 10px 20px;
     font-size: 15px;
     color: #E9ECEF;
-    margin: 10px 20px;
+    
     border: none;
     border-radius: 3px;
     text-transform: uppercase;
@@ -18,7 +23,6 @@
     padding: 15px 30px;
     font-size: 15px;
     color: #E9ECEF;
-    margin: 10px 20px;
     border: none;
     border-radius: 3px;
     text-transform: uppercase;
@@ -33,6 +37,7 @@
     border: none;
     border-radius: 3px;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .btn-warning {
@@ -59,5 +64,10 @@
 
 .warning {
     background-color: #b90504;
-    
+}
+
+.success {
+    background-color: #ffc300;
+    color: #343A40;
+    font-weight: bold;
 }
